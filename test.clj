@@ -1,0 +1,5 @@
+(def reg #"\w+")
+(def phrase "Hi there pilgrim")
+(defn tokenize [r s] (re-seq r s))
+(def result (tokenize reg phrase))
+(println result)
