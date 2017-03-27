@@ -18,3 +18,18 @@
 
 
 (print-all-things ["foo" "bar" "baz"])
+
+
+(println "------")
+(println "------")
+
+(defn find-first [f l]
+  (first (filter f l)))
+
+(defn odd [n] (= (mod n 2) 0))
+
+; (println "odd" (odd 2))
+
+; (println (find-first odd [3 8 5]))
+
+(println (filter odd [1 2 3 4 5 6 7 8]))
